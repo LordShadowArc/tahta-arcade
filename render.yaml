@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tahta-arcade
+    runtime: node
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    autoDeployTrigger: commit
+    healthCheckPath: /health

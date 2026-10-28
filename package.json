@@ -1,0 +1,12 @@
+{
+  "name": "tahta-arcade",
+  "version": "3.0.0",
+  "description": "Akıllı tahtalar için bağımsız, dokunmatik retro oyun salonu",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test"
+  }
+}

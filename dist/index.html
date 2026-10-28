@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#10111b">
+  <meta name="description" content="Akıllı tahtada dokunarak oynanabilen, ücretsiz ve hızlı retro mini oyunlar.">
+  <title>TAHTA ARCADE — Dokun, Başla, Oyna!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#" id="brand" aria-label="Tahta Arcade ana sayfa">
+      <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+      <span>TAHTA<span class="brand-accent">ARCADE</span><small>RETRO OYUN ALANI</small></span>
+    </a>
+    <div class="header-right">
+      <a href="#maker" class="create-link" id="createLink">✦ OYUN OLUŞTUR</a>
+      <button class="icon-button" id="soundToggle" aria-label="Sesi aç veya kapat" title="Ses">♪ <span id="soundIcon">KAPALI</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="home" id="home">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-square"></span> TAHTA MODU // AKTİF</div>
+          <h1>DERSE ARA.<br><em>OYUNA BAŞLA.</em></h1>
+          <p>Akıllı tahta için yapılmış mini arcade. Sadece ekrana dokun, oyununu seç ve başla. İndirme yok. Hesap yok. Sıfır ücret.</p>
+          <div class="hero-chips"><span>◉ DOKUNMATİK</span><span>⚡ HAFİF & HIZLI</span><span>⌗ 14 OYUN</span><span>✦ OYUN ATÖLYESİ</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="floating-coin">★</div>
+          <div class="hand-pointer">☞</div>
+          <div class="art-screen"><span class="art-label">INSERT FUN</span><div class="art-ghost"><i></i><i></i></div><span class="art-score">00100</span></div>
+          <div class="art-spark s1">✦</div><div class="art-spark s2">+</div>
+        </div>
+      </div>
+
+      <div class="section-heading" id="gamesTitle"><div><span class="section-index">01 / KOLEKSİYON</span><h2>OYUNUNU SEÇ <span>↘</span></h2></div><span class="section-count">14 OYUN HAZIR</span></div>
+      <div class="game-grid">
+        <button class="game-card card-maze" data-game="maze" aria-label="Nokta Avcısı oyununu başlat">
+          <div class="card-preview"><canvas data-preview="maze" width="480" height="270"></canvas><span class="card-number">01</span><span class="card-tag">LABİRENT</span></div>
+          <div class="card-bottom"><div><h3>NOKTA AVCISI</h3><p>Noktaları topla, hayaletlerden kaç.</p></div><span class="play-arrow">↗</span></div>
+        </button>
+        <button class="game-card card-run" data-game="runner" aria-label="Piksel Koşu oyununu başlat">
+          <div class="card-preview"><canvas data-preview="runner" width="480" height="270"></canvas><span class="card-number">02</span><span class="card-tag">PLATFORM</span></div>
+          <div class="card-bottom"><div><h3>PİKSEL KOŞU</h3><p>Zıpla, altınları kap, sona ulaş.</p></div><span class="play-arrow">↗</span></div>
+        </button>
+        <button class="game-card card-snow" data-game="snow" aria-label="Kar Fırtınası oyununu başlat">
+          <div class="card-preview"><canvas data-preview="snow" width="480" height="270"></canvas><span class="card-number">03</span><span class="card-tag">AKSİYON</span></div>
+          <div class="card-bottom"><div><h3>KAR FIRTINASI</h3><p>Kartopu at, canavarları dondur.</p></div><span class="play-arrow">↗</span></div>
+        </button>
+        <button class="game-card card-doom" data-game="corridor" aria-label="Neon Koridor oyununu başlat">
+          <div class="card-preview"><canvas data-preview="corridor" width="480" height="270"></canvas><span class="card-number">04</span><span class="card-tag">RETRO 3D</span></div>
+          <div class="card-bottom"><div><h3>NEON KORİDOR</h3><p>Koridoru keşfet, robotları vur.</p></div><span class="play-arrow">↗</span></div>
+        </button>
+        <button class="game-card" data-game="snake" aria-label="Neon Yılan oyununu başlat"><div class="card-preview"><canvas data-preview="snake" width="480" height="270"></canvas><span class="card-number">05</span><span class="card-tag tag-green">KLASİK</span></div><div class="card-bottom"><div><h3>NEON YILAN</h3><p>Büyü, kıvrıl, rekoru kır.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="space" aria-label="Uzay Savunması oyununu başlat"><div class="card-preview"><canvas data-preview="space" width="480" height="270"></canvas><span class="card-number">06</span><span class="card-tag tag-pink">ATIŞ</span></div><div class="card-bottom"><div><h3>UZAY SAVUNMASI</h3><p>Üç düşman dalgasını durdur.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="blocks" aria-label="Blok Yağmuru oyununu başlat"><div class="card-preview"><canvas data-preview="blocks" width="480" height="270"></canvas><span class="card-number">07</span><span class="card-tag tag-yellow">ZEKA</span></div><div class="card-bottom"><div><h3>BLOK YAĞMURU</h3><p>Parçaları yerleştir, satır sil.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="bricks" aria-label="Tuğla Avcısı oyununu başlat"><div class="card-preview"><canvas data-preview="bricks" width="480" height="270"></canvas><span class="card-number">08</span><span class="card-tag tag-blue">REFLEKS</span></div><div class="card-bottom"><div><h3>TUĞLA AVCISI</h3><p>Topu sektir, duvarı yık.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="pong" aria-label="Raket Düellosu oyununu başlat"><div class="card-preview"><canvas data-preview="pong" width="480" height="270"></canvas><span class="card-number">09</span><span class="card-tag tag-purple">SPOR</span></div><div class="card-bottom"><div><h3>RAKET DÜELLOSU</h3><p>Yapay rakibi 7 sayıda yen.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="flap" aria-label="Gökyüzü Zıplayışı oyununu başlat"><div class="card-preview"><canvas data-preview="flap" width="480" height="270"></canvas><span class="card-number">10</span><span class="card-tag tag-yellow">TEK TUŞ</span></div><div class="card-bottom"><div><h3>GÖK SIÇRAYIŞI</h3><p>Tek dokunuşla engelleri geç.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="racer" aria-label="Asfalt Kaçışı oyununu başlat"><div class="card-preview"><canvas data-preview="racer" width="480" height="270"></canvas><span class="card-number">11</span><span class="card-tag tag-pink">YARIŞ</span></div><div class="card-bottom"><div><h3>ASFALT KAÇIŞI</h3><p>Hızlan, trafikten sıyrıl, bitir.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="dodge" aria-label="Meteor Kaçışı oyununu başlat"><div class="card-preview"><canvas data-preview="dodge" width="480" height="270"></canvas><span class="card-number">12</span><span class="card-tag tag-blue">HAYATTA KAL</span></div><div class="card-bottom"><div><h3>METEOR KAÇIŞI</h3><p>Tehlikelerden kaç, yıldızları kap.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="bubbles" aria-label="Balon Patlat oyununu başlat"><div class="card-preview"><canvas data-preview="bubbles" width="480" height="270"></canvas><span class="card-number">13</span><span class="card-tag tag-pink">DOKUN</span></div><div class="card-bottom"><div><h3>BALON PATLAT</h3><p>Doğrudan ekrana dokun, balonları yakala.</p></div><span class="play-arrow">↗</span></div></button>
+        <button class="game-card" data-game="mines" aria-label="Mayın Tarlası oyununu başlat"><div class="card-preview"><canvas data-preview="mines" width="480" height="270"></canvas><span class="card-number">14</span><span class="card-tag tag-yellow">MANTIK</span></div><div class="card-bottom"><div><h3>MAYIN TARLASI</h3><p>Kareleri aç, mayınları işaretle, alanı temizle.</p></div><span class="play-arrow">↗</span></div></button>
+      </div>
+      <section class="maker" id="maker">
+        <div class="maker-heading"><span class="section-index">02 / OYUN ATÖLYESİ</span><h2>HAYAL ET.<br><em>OYUNA DÖNÜŞTÜR.</em></h2><p>Fikrini yaz; atölye oyun türünü, renkleri ve zorluğu seçip sana özel, dokunmatik kontrollü bir mini oyun kursun. Her şey tarayıcıda çalışır.</p></div>
+        <div class="maker-panel"><div class="maker-form"><label for="gamePrompt">OYUN FİKRİN</label><textarea id="gamePrompt" rows="4" maxlength="320" placeholder="Örneğin: Uzayda mor bir gemiyle meteorların arasından geçip yıldız topladığım, çok hızlı bir oyun istiyorum..."></textarea><div class="maker-options"><div><label for="gameDifficulty">ZORLUK</label><select id="gameDifficulty"><option value="normal">Normal</option><option value="easy">Kolay</option><option value="hard">Zor</option></select></div><div><label for="gameTheme">GÖRÜNÜM</label><select id="gameTheme"><option value="auto">Fikrimden seç</option><option value="space">Uzay / Neon</option><option value="ocean">Okyanus</option><option value="forest">Orman</option><option value="candy">Şeker Rüyası</option></select></div></div><label class="ai-option"><input type="checkbox" id="aiMode"> <span>Uygun bir yapay zekâ sunucusu bağlanmışsa onu kullan<br><small>İşaretlersen oyun fikrin seçilen modele gönderilir. Sunucu yoksa yerel üretici devreye girer.</small></span></label><button class="make-button" id="makeBtn">✦ OYUNU OLUŞTUR <span>→</span></button><div class="maker-note" id="makerStatus" aria-live="polite">✳ Anahtarsız yerel üretim hazır. AI kullanımı için ayrıca izinli bir model ve sunucu gerekir.</div></div><div class="maker-result" id="makerResult"><div class="result-placeholder"><span class="giant-star">✳</span><strong>FİKRİNİ BEKLİYORUZ</strong><p>Bir cümle yaz. Oyun atölyesi onu oynanabilir bir seviyeye dönüştürsün.</p></div></div></div>
+      </section>
+      <div class="home-footer"><span>✳ EKRAN SENİN KONTROLÜNDE.</span><span>KLAVYE GEREKMEZ · REKLAM YOK · İNDİRME YOK</span></div>
+    </section>
+
+    <section class="play-page hidden" id="playPage" aria-label="Oyun alanı">
+      <div class="play-topbar">
+        <button class="text-button back-button" id="backBtn">← OYUNLAR</button>
+        <div class="now-playing"><span class="green-dot"></span><span id="nowPlaying">NOKTA AVCISI</span><small>ŞU AN OYNANIYOR</small></div>
+        <div class="play-actions"><button class="top-control" id="restartBtn" title="Yeniden başlat">↻ <span>YENİDEN</span></button><button class="top-control" id="pauseBtn" title="Duraklat">Ⅱ <span>DURAKLAT</span></button><button class="top-control" id="fullscreenBtn" title="Tam ekran">⛶ <span>TAM EKRAN</span></button></div>
+      </div>
+
+      <div class="game-hud"><div class="hud-field"><small>SKOR</small><strong id="score">000000</strong></div><div class="hud-divider"></div><div class="hud-field"><small id="extraLabel">CAN</small><strong id="extraValue">♥ ♥ ♥</strong></div><div class="hud-spacer"></div><div class="hud-field best-field"><small>EN İYİ SKOR</small><strong id="bestScore">000000</strong></div></div>
+      <div class="play-layout">
+        <div class="touch-zone left-zone"><div class="control-title">HAREKET <span>↘</span></div>
+          <div class="dpad" aria-label="Dokunmatik yön tuşları">
+            <button class="touch-key key-up" data-key="up" aria-label="Yukarı">▲</button>
+            <button class="touch-key key-left" data-key="left" aria-label="Sol">◀</button>
+            <div class="dpad-center">✚</div>
+            <button class="touch-key key-right" data-key="right" aria-label="Sağ">▶</button>
+            <button class="touch-key key-down" data-key="down" aria-label="Aşağı">▼</button>
+          </div>
+          <div class="touch-tip" id="touchTip">Yön tuşlarına basılı tut</div>
+        </div>
+        <div class="stage-wrap"><div class="stage-chrome"><span>● ● ●</span><span>TAHTA_OS / 1.0</span><span>LIVE <i></i></span></div>
+          <div class="canvas-shell"><canvas id="gameCanvas" width="960" height="540" aria-label="Oyun ekranı"></canvas><div class="game-overlay" id="gameOverlay"><div class="overlay-chip" id="overlayChip">HAZIR MISIN?</div><h2 id="overlayTitle">OYUN BAŞLIYOR</h2><p id="overlayText">Ekrandaki tuşları kullanarak oyna.</p><button class="start-button" id="overlayButton">▶ BAŞLA</button></div></div>
+          <div class="stage-bottom"><span>◈ <span id="instruction">HAREKET ET VE PUAN TOPLA</span></span><span>60 FPS HEDEFİ</span></div>
+        </div>
+        <div class="touch-zone right-zone"><div class="control-title">AKSİYON <span>↘</span></div><div class="action-buttons"><button class="action-key" data-key="action" id="actionBtn">A<small id="actionLabel">ZIPLA</small></button><button class="combo-key hidden" id="comboBtn" data-key="combo">↗<small>SAĞ + ZIPLA</small></button></div><div class="touch-tip" id="actionTip">Dokunarak harekete geç</div></div>
+      </div>
+      <div class="keyboard-note">⌨ KLAVYE DE ÇALIŞIR: WASD / OK TUŞLARI + BOŞLUK <span>·</span> ESC = DURAKLAT</div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 TAHTA ARCADE</span><span>OYUNLAR ÖZGÜNDÜR. TAMAMEN TARAYICIDA ÇALIŞIR.</span><span>MADE FOR BIG SCREENS ✳</span></footer>
+  <script src="extra-games.js" defer></script>
+  <script src="game.js" defer></script>
+</body>
+</html>
